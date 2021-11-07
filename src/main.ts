@@ -15,8 +15,8 @@ const GameConfig: Phaser.Types.Core.GameConfig = {
   title: 'ExampleGame',
   url: 'https://github.com/digitsensitive/phaser3-typescript',
   version: '2.0',
-  width: 800,
-  height: 600,
+  width: 828,
+  height: 1472,
   type: Phaser.AUTO,
   parent: 'app',
   scene: [MenuScene],
@@ -24,11 +24,14 @@ const GameConfig: Phaser.Types.Core.GameConfig = {
     keyboard: true
   },
   physics: {
-    default: 'arcade',
-    arcade: {
-      gravity: { y: 0 },
-      debug: false
-    }
+      default: 'matter',
+      matter: {
+          gravity: {
+              x: 0,
+              y: 0
+          },
+          debug: true
+      }
   },
   backgroundColor: '#300000',
   render: { pixelArt: false, antialias: true },

@@ -1,3 +1,5 @@
+import { defineConfig } from 'vite';
+
 export default {
   // Define `base` because this deploys to user.github.io/repo-name/
   base: './',
